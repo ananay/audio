@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kanttiinit audio</title>
+  </head>
+  <body>
+    <h2>Hello world, this is Kanttiinit audio</h2>
+
+    <div class="speech">
+      <input id="speech-input" type="text" x-webkit-speech>
+    </div>
+
+  </body>
+</html>
+
+<script>
+  var input = document.getElementById('speech-input');
+
+  input.webkitSpeech = true;
+</script>
+
+<style>
+  body {
+    background: #1d1d1d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+  body * {
+    margin: 10px;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+
+  }
+</style>
